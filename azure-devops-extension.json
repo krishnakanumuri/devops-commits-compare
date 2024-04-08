@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "commit-compare",
     "publisher": "krishnakanumuri",
-    "version": "0.0.20",
+    "version": "0.0.22",
     "name": "Commit Compare",
     "description": "Azure DevOps repos commit compare helper",
     "public" : true,
@@ -32,5 +32,14 @@
             "path": "dist",
             "addressable": true
         }
-    ]
+    ],
+    "links":{
+        "repository":{
+            "uri":"https://github.com/krishnakanumuri/devops-commits-compare"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/krishnakanumuri/devops-commits-compare"
+    }
 }
