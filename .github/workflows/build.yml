@@ -23,4 +23,5 @@ jobs:
         npm install
         npm ci
         npm run build
-        echo "${{ format('{"version":"{0}"}', github.run_number) }}"
+        echo '{"version":"1.2.${{ github.run_number }}}' > version.json
+        cat version.json
