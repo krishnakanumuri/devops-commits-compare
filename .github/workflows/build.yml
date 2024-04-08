@@ -24,4 +24,4 @@ jobs:
         npm ci
         npm run build
         echo '{"version":"1.0.${{ github.run_number }}"}' > version.json
-        tfx extension publish --manifest-globs azure-devops-extension.json src/**/*.json --overrides-file version.sjon --auth-type 'pat' --token '${{ secrets.MARKETPLACE_TOKEN }}'
+        npm run publish-extension -- --overrides-file version.sjon --auth-type 'pat' --token '${{ secrets.MARKETPLACE_TOKEN }}'
