@@ -23,4 +23,4 @@ jobs:
         npm install
         npm ci
         npm run build
-        echo format('{"version":"{0}"}', github.github.run_number}')
+        echo "format('{"version":"{0}"}', github.github.run_number)"
