@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "commit-compare",
+    "publisher": "krishnakanumuri",
+    "version": "0.0.20",
+    "name": "Commit Compare",
+    "description": "Azure DevOps repos commit compare helper",
+    "public" : true,
+    "categories": [
+        "Azure Repos"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default" : "static/compare.png",
+        "large": "static/compare-large.png"
+    },
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+    },
+    "files": [
+        {
+            "path" : "static",
+            "addressable":true
+        },
+        {
+            "path": "dist",
+            "addressable": true
+        }
+    ]
+}
