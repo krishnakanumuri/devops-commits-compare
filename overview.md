@@ -10,7 +10,7 @@ Compare two git commits right from DevOps Git Commit history.
 - Select to Compare : Selects commit to start compare
 - Compare with Selected: Opens comparison in new window setting current comment as target
 
-Workflow will looks like:
+Usage:
 1. Go to history in Azure Devops repos
 2. Select a commit to set as base version for comparison using *Select to Compare*
 3. Now choose the commit version you want to compare and select the *Compare with Selected* option to view the comparison in a new tab.
