@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "commit-compare",
     "publisher": "krishnakanumuri",
-    "version": "0.0.22",
+    "version": "0.0.24",
     "name": "Commit Compare",
     "description": "Azure DevOps repos commit compare helper",
     "public" : true,

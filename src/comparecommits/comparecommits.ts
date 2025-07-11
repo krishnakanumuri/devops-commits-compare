@@ -27,10 +27,7 @@ SDK.register("source-commit-menu", () => {
       const gitService = await SDK.getService<IVersionControlRepositoryService>(GitServiceIds.VersionControlRepositoryService);
       const result = await gitService.getCurrentGitRepository();
       //TODO: Implement commits compare
-      window.sourceCommitId = context.commit.commitId;
-      console.log(context.commit.commitId);
-      console.log(result);
-      console.log(context);
+      window.sourceCommitId = context.commit.commitId;      
     }
   }
 });
@@ -45,8 +42,7 @@ SDK.register("target-commit-menu", () => {
       }
       const gitService = await SDK.getService<IVersionControlRepositoryService>(GitServiceIds.VersionControlRepositoryService);
       const result = await gitService.getCurrentGitRepository();
-      const url = combineUrlPaths("https://dev.azure.com", result!.url, `branchcompare?baseVersion=GC${window.sourceCommitId}&targetVersion=GC${context.commit.commitId}&_a=files`);
-      console.log(url);
+      const url = combineUrlPaths("https://dev.azure.com", result!.url, `branchcompare?baseVersion=GC${window.sourceCommitId}&targetVersion=GC${context.commit.commitId}&_a=files`);      
       window.open(url);
     }
   }
